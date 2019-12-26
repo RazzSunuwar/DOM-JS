@@ -1,4 +1,4 @@
-// // EXAMINE THE DOCUNEMT OBJECT
+        // EXAMINE THE DOCUNEMT OBJECT
 // // console.dir(document);
 // console.log(document.domain);   //To check the domain in developers tools
 // console.log(document.URL);  //To check the URL in developers tools
@@ -65,7 +65,11 @@
 
 
 
-
+// QWERYSELECTOR
+/*The queryselector() method  return the first element that matches a specified CSS selector(s) in
+the document.
+NOTE:- The querySelector() method only returns the first element that matches the specified selectors.
+To return all the matches use the querySelectorAll() method instead.*/ 
 
 
 
