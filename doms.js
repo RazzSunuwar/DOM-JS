@@ -71,6 +71,41 @@ the document.
 NOTE:- The querySelector() method only returns the first element that matches the specified selectors.
 To return all the matches use the querySelectorAll() method instead.*/ 
 
+// var header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px #5EFF33';
+
+// var input = document.querySelector('input');
+// input.value = 'Hello world';
+
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = "SEND"
+
+
+
+// var item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
+
+// var lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';
+
+// var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+// secondItem.style.color = 'green';  
+
+
+// QUERYSELECTORALL
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+titles[0].textContent = 'Hello';        //AddItems will be changed into Hello
+
+
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+
+for(var i= 0; i < odd.length; i++){
+        odd[i].style.backgroundColor = 'blue'; 
+        even[i].style.backgroundColor = 'green';      
+
+}
 
 
 
