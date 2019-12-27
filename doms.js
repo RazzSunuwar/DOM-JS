@@ -1,4 +1,4 @@
-        // EXAMINE THE DOCUNEMT OBJECT
+// EXAMINE THE DOCUNEMT OBJECT
 // // console.dir(document);
 // console.log(document.domain);   //To check the domain in developers tools
 // console.log(document.URL);  //To check the URL in developers tools
@@ -93,19 +93,18 @@ To return all the matches use the querySelectorAll() method instead.*/
 
 
 // QUERYSELECTORALL
-var titles = document.querySelectorAll('.title');
-console.log(titles);
-titles[0].textContent = 'Hello';        //AddItems will be changed into Hello
+// var titles = document.querySelectorAll('.title');
+// console.log(titles);
+// titles[0].textContent = 'Hello';        //AddItems will be changed into Hello
 
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
-var even = document.querySelectorAll('li:nth-child(even)');
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// var even = document.querySelectorAll('li:nth-child(even)');
 
-for(var i= 0; i < odd.length; i++){
-        odd[i].style.backgroundColor = 'blue'; 
-        even[i].style.backgroundColor = 'green';      
-
-}
+// for(var i= 0; i < odd.length; i++){
+//         odd[i].style.backgroundColor = 'blue'; 
+//         even[i].style.backgroundColor = 'green';      
+// }
 
 
 
