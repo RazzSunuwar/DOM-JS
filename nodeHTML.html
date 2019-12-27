@@ -1,0 +1,55 @@
+<!-- JAVASCRIPT HTML DOM Elements (Nodes) -->
+
+<!-- Adding and Removing Nodes (HTML Elements) -->
+
+<!-- To add new element to HTML DOM, you must create the element(element node) first, and then append it to an existing element. -->
+
+<!-- EXAMPLE -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2"> This is another paragraph</p>
+    </div>
+    
+    <script>
+    var para = document.createElement("p");
+    var node = document.createTextNode(" There is new.");
+    para.appendChild(node);
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+    </script>
+    
+</body>
+</html>
+
+
+<!-- EXAMPLE EXPLAINED -->
+<!-- This code creates a new <p> elemnet:
+var para = document.createElement("p");
+
+To add text to the <p> element, you must create a text node first. This code creates a text node:
+var node = document.createTextNode(" There is new.");
+
+Then you must append the text node to the <p> element:
+para.appendChild(node);
+
+Finally you must append the new element to an existing element:
+This code fine an existing element:
+var element = document.getElementById("div1");
+
+This code appends the new elemnt to the existing element:
+element.appendChild(para); -->
+
+
+
+    
+
