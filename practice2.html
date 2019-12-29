@@ -1,6 +1,6 @@
 <!-- REMOVING EXISTING HTML ELEMENTS -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,4 +22,58 @@
         }
     </script>
 </body>
-</html> 
+</html> -->
+
+
+
+<!-- Removing a Child Node -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is paragraph1.</p>
+        <p id="p2">This is paragraph2.</p>
+    </div>
+
+    <script type="text/javascript">
+    var parent = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    parent.removeChild(child);
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is first paragraph.</p>
+        <p id="p2">This is second paragraph.</p>
+    </div>
+
+    <script type="text/javascript">
+        var parent = document.getElementById("div1");
+        var child = document.getElementById("p1");
+        var para = document.createElement("p");
+        var node = document.createTextNode("This is new paragraph.");
+        para.appendChild(node);
+        parent.replaceChild(para, child);
+    </script>
+</body>
+</html>
+
+
