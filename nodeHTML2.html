@@ -1,0 +1,89 @@
+<!-- Removing a Child Node -->
+<!-- For browsers that does not support the remove() method, you have to find the parent node to remove an element: -->
+
+<!-- Example -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is another paragraph</p>
+    </div>
+
+    <script>
+    var parent = document.getElementById("div1")
+    var child = document.getElementById("p1");
+    parent.removeChild(child);
+    </script>
+</body>
+</html>  -->
+
+
+
+<!-- Example explained removing a Child Node -->
+
+<!-- This HTML document contains a <div> element with two child nodes (two <p> elements):
+    <div id="div1">
+        <p id="p1">This is first paragraph</p>
+        <p id="p2">This is second paragraph</p>
+    </div> -->
+
+    <!-- Find the element with id = "div1": -->
+
+    <!-- var parent = document.getElementById("div1"); -->
+
+    <!-- Find the <p> element with id = "p1":
+    var child = document.getElementById("p1"); -->
+
+    <!-- Remove the child from the parent:
+    parent.removeChild(child); -->
+
+    <!-- Here is a common workaround: Find the child you want to remove, and use its parentNode property to find the parent: 
+        var child = document.getElementById("p1");
+    parent.removeChild(child); -->
+
+
+
+    <!-- Replacing HTML elements -->
+
+    <!-- To replace an element to the HTML DOM, use the replaceChild() method: -->
+
+    <!-- Example -->
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is another paragraph</p>
+    </div>
+
+    <script>
+    var parent = document.getElementById("div1")
+    var child = document.getElementById("p1");
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is  new");
+    para.appendChild(node);
+    parent.replaceChild(para, child);
+    </script>
+</body>
+</html> 
+
+
+
+
+
+

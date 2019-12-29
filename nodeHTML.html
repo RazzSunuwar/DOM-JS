@@ -6,6 +6,35 @@
 
 <!-- EXAMPLE -->
 
+
+<!-- EXAMPLE EXPLAINED -->
+
+<!-- This code creates a new <p> elemnet:
+var para = document.createElement("p");
+
+To add text to the <p> element, you must create a text node first. This code creates a text node:
+var node = document.createTextNode(" There is new.");
+
+Then you must append the text node to the <p> element:
+para.appendChild(node);
+
+Finally you must append the new element to an existing element:
+This code fine an existing element:
+var element = document.getElementById("div1");
+
+This code appends the new elemnt to the existing element:
+element.appendChild(para); -->
+
+
+
+ <!-- creating new HTML Element - insertBefore()
+
+ The appendChild() method in the previous examples, appended the new element as the last child of the parent.
+if you don't want that you can use the insertBefore() method: -->
+
+<!-- EXAMPLE -->
+
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,24 +61,79 @@
 </html>
 
 
-<!-- EXAMPLE EXPLAINED -->
-<!-- This code creates a new <p> elemnet:
-var para = document.createElement("p");
-
-To add text to the <p> element, you must create a text node first. This code creates a text node:
-var node = document.createTextNode(" There is new.");
-
-Then you must append the text node to the <p> element:
-para.appendChild(node);
-
-Finally you must append the new element to an existing element:
-This code fine an existing element:
-var element = document.getElementById("div1");
-
-This code appends the new elemnt to the existing element:
-element.appendChild(para); -->
-
-
-
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2"> This is another paragraph.</p>
+    </div>
     
+    <script>
+    var para = document.createElement("p");
+    var node = document.createTextNode(" There is new.");
+    para.appendChild(node);
+    
+    var element = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    element.insertBefore(para, child);
+    </script>
+    
+</body>
+</html> -->
 
+
+
+<!-- Removing Existing HTML Elements -->
+
+<!-- To remove an HTML element, use the remove() method: -->
+<!-- EXAMPLE -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="p1">This is a paragraph</p>
+        <p id="p2">This is another paragraph</p>
+    </div>
+    
+    <button onClick="myFunction()">Remove Element</button>
+    
+    <script>
+    function myFunction(){
+        var elemnt = document.getElementById("p1");
+        elemnt.remove();
+    }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- Example explained of removing existing HTML elements -->
+
+<!--    The HTML document contains a <div> element with two child nodes (two <p> elements): -->
+<!-- <div>
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph</p>
+</div> -->
+
+<!-- Find the element you want to remove : -->
+<!-- var elemnt = document.getElementById("p1"); -->
+<!-- 
+Then excute the remove() method on that element:
+elemnt.remove(); -->
+
+<!-- Note: The remove() method does not  work in older browsers, see the example below on how to use removeChild() instead. -->
