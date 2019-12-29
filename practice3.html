@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello World";
+    </script> -->
+
+
+    <!-- Finding HTML Element by Id -->
+    <p id="intro">This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var myElement = document.getElementById("intro");
+        document.getElementById("demo").innerHTML = "The Text from intro paragraph is " +myElement.innerHTML;
+    </script>
+
+
+
+
+
+    <!-- Finding HTML Elements by Tag Name -->
+    <!-- <div id="div1">
+        <p id="p1">This is the first paragraph.</p>
+        <p id="p2">This is the second paragraph.</p>
+    </div>
+    <p id="demo"></p>
+
+    <script>
+        var x = document.getElementById("div1");
+        var y = x.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML = 'The 0 index inside div1 is: ' +y[0].innerHTML;
+    </script> -->
+</body>
+</html>
