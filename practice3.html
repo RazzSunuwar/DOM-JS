@@ -14,7 +14,7 @@
 
 
     <!-- Finding HTML Element by Id -->
-    <p id="intro">This is the first paragraph.</p>
+    <!-- <p id="intro">This is the first paragraph.</p>
     <p>This is the second paragraph.</p>
 
     <p id="demo"></p>
@@ -22,7 +22,7 @@
     <script>
         var myElement = document.getElementById("intro");
         document.getElementById("demo").innerHTML = "The Text from intro paragraph is " +myElement.innerHTML;
-    </script>
+    </script> -->
 
 
 
@@ -40,5 +40,50 @@
         var y = x.getElementsByTagName("p");
         document.getElementById("demo").innerHTML = 'The 0 index inside div1 is: ' +y[0].innerHTML;
     </script> -->
+
+
+<!-- Finding HTML Elements by Class Name -->
+    <!-- <p class="intro">This is the first paragraph.</p>
+    <p class="intro">This is the second paragraph.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var x = document.getElementsByClassName("intro");
+        document.getElementById("demo").innerHTML = "The first paragraph (index 0) with class: " +x[0].innerHTML;
+    </script> -->
+
+
+    <!-- Finding HTML Elements by CSS Selectors -->
+    <!-- <p class="intro">This is the first paragraph.</p>
+    <p class="intro">This is the second paragraph.</p>
+
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+    var x = document.querySelectorAll("p.intro");
+    document.getElementById("demo").innerHTML = "The 0 index paragaraph with class ='intro': " + x[0].innerHTML;
+    </script> -->
+
+    <form id="frm1" action="">
+    First name: <input type="text" name="fname" value="Ram"> <br>
+    Last name: <input type="text" name="lname" value="Lee"> <br> <br>
+    <input type="Submit" value="Submit">
+    </form>
+
+    <button onClick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+    <script>
+      function myFunction(){
+        var x = document.forms["frm1"];
+        var text ="";
+        var i;
+        for(i=0; i< x.length; i++){
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+    </script>   
 </body>
 </html>

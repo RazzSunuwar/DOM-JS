@@ -103,8 +103,12 @@ To return all the matches use the querySelectorAll() method instead.*/
 
 // for(var i= 0; i < odd.length; i++){
 //         odd[i].style.backgroundColor = 'blue'; 
-//         even[i].style.backgroundColor = 'green';      
+//         even[i].style.backgroundColor = 'green';  
 // }
+
+
+
+
 
 
 
