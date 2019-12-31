@@ -68,7 +68,7 @@ The function will be executed when the button is clicked -->
 
 
 <!-- The onload and onunload Events -->
-<!-- The onload and onunload events are triggered when thee user enters or leaves the page.
+<!-- The onload and onunload events are triggered when the user enters or leaves the page.
 The onload event can be used check the visitor's browser type and browser version, and load the proper
 version of the web page based on the information.
 
@@ -111,16 +111,62 @@ The onload and onunload events can be used to deal with cookies.
 <!-- Below is an example of how to use the onchange. The uppercase() function will be called when
 a user changes the content of an input field.  -->
 
-<script>
+<!-- <script>
 function myFunction(){
     var x = document.getElementById("fname");
-    x.value = x.value.toUpperCase();
+    x.value = x.value.toUpperCase(); 
 }
 </script>
 
 Enter your name: <input type="text" id="fname" onchange="myFunction()">
 
-<P>When you leave the input field, a function is triggered which transforms the input text to uppercase.</P>
+<P>When you leave the input field, a function is triggered which transforms the input text to
+uppercase.</P> -->
+
+
+<!-- The onmouseover and onmouseout Events -->
+
+<!-- The onmouseover and onmouseout events can be used to trigger a functon when the user mouses over,
+or out of, an HTML element: -->
+
+<!-- <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+style="background-color:darkorange; width: 120px; height: 50px; padding: 30px;">Mouse Over Me</div>
+
+<script>
+    function mOver(obj){
+    obj.innerHTML = "Thank You"
+}
+
+function mOut(obj){
+    obj.innerHTML = "Mouse over me"
+}
+</script> -->
+
+
+<!-- The onmousedown, onmouse and onclick Events -->
+<!-- The mousedown, onmouse and onclick Events -->
+<!-- The onmousedown, onmouse, and  onclick events are all parts of a mouse-click.
+First when a mouse-click. the onmousedown event is triggered , then, when the mouse-button is released,
+the onmouseup event is tiggered, finally, when the mouse-ckick is completed, the onclick event
+is triggered. -->
+
+<!-- Example -->
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#ff0000; width: 90px; height: 20px; padding: 40px;
+font-size: medium;">Click here</div>
+
+<script>
+    function mDown(obj){
+    obj.style.backgroundColor ="#ff0000";
+    obj.innerHTML = "Release Me";
+}
+
+function mUp(obj){
+    obj.style.backgroundColor = "#512dae";
+    obj.innerHTML = "Thank You";
+
+}     
+</script>
 
 </body>
 </html>   
