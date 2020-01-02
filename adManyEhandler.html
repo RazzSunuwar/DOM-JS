@@ -1,0 +1,42 @@
+<!-- Add many event handlers to the same Element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- This example uses the addEventListener() method to add two click events to the same button. -->
+
+<button id="myBtn">Try it</button>
+
+<script>
+    // document.getElementById("myBtn").addEventListener("click", myFunction);
+    // document.getElementById("myBtn").addEventListener("click", mySomeFunction);
+
+
+    // function myFunction(){
+    //     alert("Hello World");
+    // }
+    // function mySomeFunction(){
+    //     alert("Hello World second");
+    // }        OR
+    
+    var x = document.getElementById("myBtn");
+    x.addEventListener("click", myFunction);
+    x.addEventListener("click", mySomeFunction);
+
+
+    function myFunction(){
+        alert("Hello World");
+    }
+    function mySomeFunction(){
+        alert("Hello World second");
+    } 
+</script>
+
+</body>
+</html> 

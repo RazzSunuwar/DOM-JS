@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Add an event handler to an Element -->
+    <!-- Example -->
+    <!-- Alert "Hello World" when the user clicks on an element: -->
+
+    <button id="myBtn">Try it</button>
+    <!-- <p id="demo"></p> -->
+
+    <script>
+        // document.getElementById("myBtn").addEventListener("click", function(){
+        //     alert("Hello World");   
+        // })
+        
+        // By using external function
+
+        document.getElementById("myBtn").addEventListener("click", myFunction);
+
+        function myFunction(){
+            alert("Hello World");
+        }
+    </script>
+</body>
+</html>
