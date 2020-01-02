@@ -24,15 +24,46 @@
 // }
 
 // Practice 6
-function checkCookies(){
-    var text="";
-    if (navigator.cookieEnabled === true){
-        text="cookies enabled."
-    } else {
-        text="cookies are not enabaled."
-    }
-    document.getElementById("demo").innerHTML= text;
-}
+// Checking cookies
+// function checkCookies(){
+//     var text="";
+//     if (navigator.cookieEnabled === true){
+//         text="cookies enabled."
+//     } else {
+//         text="cookies are not enabaled."
+//     }
+//     document.getElementById("demo").innerHTML= text;
+// }
 
+// Practice 7
+//Fill your name in the box
+// function myFunction(){
+//     var x = document.getElementById("fname");
+//     x.value = x.value.toUpperCase();
+// }
 
+// Practice 8
+//  Give clor on the background of the box 
+// function myFunction(x){
+//     x.style.background = "green";
+// }
 
+// Practice 9
+// function mOver(obj){
+// obj.innerHTML = 'Thank you';
+// }
+
+// function mOut(obj){
+//     obj.innerHTML = 'Mouse over here';
+// }
+
+// Practice 10
+// function mUp(obj){
+//     obj.style.background = "blue";
+//     obj.innerHTML = 'Thank you';
+// }
+
+// function mDown(obj){
+//     obj.style.background = "red";
+//     obj.innerHTML = 'Release on';
+// }
