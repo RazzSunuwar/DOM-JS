@@ -1,9 +1,57 @@
-<script>
+<!-- <script>
     var arr =[1, 2, 3, 4, 5,6, 7, 8, 9];
 // console.log(arr.shift());
 // console.log(arr.push(arr.shift()));
 console.log(arr.unshift(arr.pop()));
 console.log(arr);
 
-</script>
+</script> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    .rapper {
+        width: 75%;
+    }
+
+    .rapper button {
+        width: 250px;
+        height: 100px;
+        margin: 1rem;
+    }
+    </style>
+    <div class="rapper">
+        <button id="btn1">1</button>
+        <button id="btn2">2</button>
+        <button id="btn3">3</button>
+        <button id="btn4">4</button>
+        <button id="btn5">5</button>
+        <button id="btn6">6</button>
+        <button id="btn7">7</button>
+        <button id="btn8">8</button>
+        <button id="btn9">9</button>
+    </div>
+
+    <script>
+
+        let arr = [1,2,3,6,9,8,7,4];
+        document.getElementById("btn5").addEventListener("click", function() {
+            arr.unshift(arr.pop());
+            for(let i = 0; i < arr.length; i++) {
+                let btn = document.getElementById('btn' + arr[i]);
+                btn.textContent = arr[i];
+            }
+        });
+
+    </script>
+</body>
+</html>
 
