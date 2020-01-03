@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #myDiv, #myDiv1 {
+            background-color: darkorange;
+            padding: 50px;
+        }
+        #myP, #myP1 {
+            background-color: white;
+            font-size: medium;
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<h1 style="text-align: center;"><b>addEventListener Bubbling and Capturing()</b></h1>
+<body>
+    <div id="myDiv">
+        <h2>Bubbling:</h2>
+            <p id="myP">Click here</p>
+        <p></p>
+    </div>
+
+    <div id="myDiv1">
+        <h2>Capturing:</h2>
+            <p id="myP1">Click here</p>
+        <p></p>
+    </div>
+
+    <script>
+        document.getElementById("myP").addEventListener("click", function(){
+            alert("You clicked the white element")
+        }, false);   //false will trigger bubbling
+
+        document.getElementById("myDiv").addEventListener("click", function(){
+            alert("You clicked dark orange element");
+        }, false);
+
+        document.getElementById("myP1").addEventListener("click", function(){
+            alert("you clicked the white element");
+        }, true);   //true will trigger capturing
+
+        document.getElementById("myDiv1").addEventListener("click", function(){
+            alert("You clicked dark orange element");
+        }, true);
+    </script>
+</body>
+</html>
