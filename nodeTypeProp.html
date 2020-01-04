@@ -1,0 +1,22 @@
+<!-- The nodeType Property -->
+<!-- The nodeType property is read only. -->
+
+<!-- Example -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nodeType Property</title>
+</head>
+<body>
+    <h1 id="myTask">This is the is the first heading of the page.</h1>
+    <p id="myTask1"></p>
+
+    <script>
+    document.getElementById("myTask1").innerHTML = document.getElementById("myTask").nodeType;
+    </script>
+</body>
+</html>

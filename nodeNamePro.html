@@ -1,0 +1,19 @@
+<!-- The nodeName Property -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>node Name Property</title>
+</head>
+<body>
+    <h1 id="myFun">This is the heading line.</h1> 
+    <p id="myFun1"></p>
+    
+    <script>
+    document.getElementById("myFun1").innerHTML = document.getElementById("myFun").nodeName;
+    /*Note: nodeName always contains the uppercase tag name of an HTML element*/
+    </script>
+</body>
+</html> 

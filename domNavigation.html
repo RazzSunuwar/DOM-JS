@@ -1,0 +1,73 @@
+<!-- Nodes properties to navigate between nodes with JavaScript: -->
+
+<!-- parentNode
+childNodes[nodenumber]
+firstChild
+lastChild
+nextSibling
+previousSibling -->
+
+<!-- CHILD NODES AND NODES VALUES -->
+
+<!-- Example 1 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myDiv">This is heading first.</h1>
+    <p id="para">T</p>
+    <script>
+        document.getElementById("para").innerHTML = document.getElementById("myDiv").innerHTML;
+    </script>
+</body>
+</html> -->
+
+
+<!-- Example 2 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myDiv">This is heading first.</h1>
+    <p id="para"></p>
+    <script>
+        document.getElementById("para").innerHTML = document.getElementById("myDiv").firstChild.nodeValue;
+    </script>
+</body>
+</html>  -->
+
+<!-- Example 3-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myDiv">This is heading first.</h1>
+    <p id="para"></p>
+    <script>
+        document.getElementById("para").innerHTML = document.getElementById("myDiv").childNodes[0].nodeValue;
+    </script>
+</body>
+</html> -->
+
+<!-- NOTE
+We use innerHTML property to retrieve the content of an HTML. -->
+
+
