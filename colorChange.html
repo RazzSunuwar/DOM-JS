@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM text color change</title>
+</head>
+<body style="text-align: center;">
+    <h2>JavaScript color change</h2> 
+    <p>Hello! This is P1.</p>
+    <p>This is second line.</p>
+    <p>This is color third.</p>
+
+    <p>Click the button to change the color of the text.</p>
+
+    <button onclick="myFunction()">Click Here</button>
+
+    <script>
+        function myFunction(){
+            var myCollection = document.getElementsByTagName("p");
+            var i;
+            for(i=0; i < myCollection.length; i++){
+                myCollection[i].style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+</html>
