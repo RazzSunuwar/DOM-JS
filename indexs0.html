@@ -41,13 +41,17 @@ console.log(arr);
     </div>
 
     <script>
-
+        
         let arr = [1,2,3,6,9,8,7,4];
+        let arr2 = [1,2,3,6,9,8,7,4];
+        let colors = ['#0D47A1', '#F57F17', '#1B5E20', '#BF360C', '#E65100', '#33691E', '#880E4F', '#F57F17', '#1B5E20'];
         document.getElementById("btn5").addEventListener("click", function() {
             arr.unshift(arr.pop());
-            for(let i = 0; i < arr.length; i++) {
-                let btn = document.getElementById('btn' + arr[i]);
+            colors.unshift(colors.pop());
+            for(let i = 0; i <= arr2.length; i++) {
+                let btn = document.getElementById('btn' + arr2[i]);
                 btn.textContent = arr[i];
+                btn.style.background = colors[i];
             }
         });
 
